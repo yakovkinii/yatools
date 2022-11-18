@@ -3,17 +3,15 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "yadraw"
-version = "0.0.7"
+name = "yatools"
+version = "0.0.1"
 authors = [
     { name = "Ivan I. Yakovkin", email = "yakovkinii@gmail.com" },
 ]
-description = "Graphical library over pygame"
+description = "Tools for YaDraw and more"
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    'attrs',
-    'pygame',
     'coloredlogs',
 ]
 classifiers = [
@@ -23,5 +21,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/EmixD/yadraw"
-"Bug Tracker" = "https://github.com/EmixD/yadraw/issues"
+"Homepage" = "https://github.com/EmixD/yatools"
+"Bug Tracker" = "https://github.com/EmixD/yatools/issues"
