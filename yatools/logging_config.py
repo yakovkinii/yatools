@@ -21,7 +21,7 @@ def init(level=logging.INFO):
         name=dict(color='blue'),
         programname=dict(color='cyan'),
         username=dict(color='yellow'),
-        filename=dict(color='white', faint=True),
+        pathname=dict(color='white', faint=True),
         lineno=dict(color='white', faint=True),
     )
 
@@ -37,6 +37,6 @@ def init(level=logging.INFO):
         critical=dict(color='red', bold=True),
     )
     coloredlogs.DEFAULT_LOG_LEVEL = level
-    coloredlogs.DEFAULT_LOG_FORMAT = '%(asctime)s %(levelname).4s %(filename)s:%(lineno)d %(message)s'
+    coloredlogs.DEFAULT_LOG_FORMAT = '%(pathname)s:%(lineno)d\n%(asctime)s %(levelname).4s %(message)s'
     coloredlogs.DEFAULT_DATE_FORMAT = '%H:%M:%S'
     coloredlogs.install()

@@ -5,7 +5,7 @@ The key principle: avoid building the app around GUI. Make it easy to add GUI to
 import logging
 import unittest
 
-from yadraw import logging_config
+from yatools import logging_config
 
 
 class TestMinimal(unittest.TestCase):
